@@ -1,0 +1,203 @@
+body{
+	margin: 0;
+	font-family: 'Lato';
+	background-color: #004f50;
+	color: #EEFBFB;
+}
+
+.name-header a{
+	top:47px;
+	font-size: 30px;
+}
+
+#navbar a:before{
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 2px;
+  bottom: -30%;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+  
+#navbar a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#navbar {
+	background-color: #f4f4f4;
+	color: #a9a9a9;
+	font-size: 20px;
+	position: sticky;
+}
+
+#navbar ul{
+	list-style: none;
+	text-align: right;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+	color: grey;
+	text-decoration: none;
+	padding-right: 15px;
+	transition: 1s;
+	position: relative;
+}
+
+.contact{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+} 
+
+.contact h1{
+    border-bottom: 3px solid #EEFBFB;
+	display: inline;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.grid-container i{
+	font-size: 60px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2pt #80a7a8;
+	box-sizing: border-box;
+	background-color: #80a7a8;
+	position: relative;
+	transition: .5s;
+	padding: 10px;
+
+}
+
+.email, .phone{
+	text-align: center;
+	position: relative;
+}
+
+.email{
+	flex:0 0 50%;
+}
+
+.email:after{
+	content: "jaskarn.grewal@yahoo.com";
+	color: #EEFBFB;
+	visibility: hidden;
+	transition:  0.3s ease-in-out;
+	position: relative;
+	text-align: center;
+	transform: scale(0);
+	display: block;
+	top: 30px;
+}
+
+.email:hover:after{
+	visibility: visible;
+	transform: scale(1.2);
+	border:hidden;
+}
+
+.phone:after{
+	content: "(+1) 416-457-6239";
+	color: #EEFBFB;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	text-align: center;
+	transform: scale(0);
+	display: block;
+	top: 30px;
+}
+
+.phone:hover:after{
+	visibility: visible;
+	transform: scale(1.2);
+}
+
+
+.grid-container i:hover{
+	transform: scale(1.4);
+	border:hidden;
+	background-color: #004f50;
+}
+
+.phone{
+	flex: 1;
+}
+.grid-container{
+	display: flex;
+	padding-top: 10%;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 12%;
+}
+
+.wrapper{
+	top:70%;
+	left: 30%;
+	position: relative;
+	max-width: 23%;
+	background-color: #ffffff;
+	transform: translate(35%,-10%);
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 2px #80a7a8;
+}
+
+.wrapper h2{
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #332902;
+}
+
+.wrapper .input_field{
+	margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+	width: 90%;
+	border:1px solid #e0e0e0;
+	padding: 10px;
+}
+
+.wrapper textarea{
+	height: 80px;
+	resize: none;
+}
+
+.wrapper .btn input[type="submit"]{
+	border:0;
+	margin-top: 15px;
+	padding: 10px;
+	width: 100%;
+	background:#80a7a8;
+	color: #EEFBFB;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.wrapper #error_message{
+	margin-bottom: 20px;
+	padding:0px;
+	background: #fe8b8e;
+	text-align: center;
+	font-weight: 14px;
+	transition: all 0.5s ease;
+}

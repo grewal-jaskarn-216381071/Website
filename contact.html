@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	
+	<script src=".//scripts/script.js"></script>
+</head>
+<body>
+	<nav id="navbar">
+		<div class="container">
+			<div class="name-header">
+				<li><a href="#">Jaskarn Grewal</a></li>
+				</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="contact">
+		<h1>Contact</h1>
+	</div>
+
+	<div class="grid-container">
+	<div class="email">
+		<i class="fa fa-envelope"></i>
+		</div>
+		<div class="phone">
+			<i class="fa fa-phone"></i>
+		</div>
+		</div>
+
+	<div class="wrapper">
+		<h2>Contact Me</h2>
+		<div id="error_message"></div>
+
+		<form id="myform" onsubmit="return validation() " action="https://formspree.io/f/xvodqdov" method="post">
+		<div class="input_field">
+			<input type="text"name ="name"placeholder="Name" id="name">
+		</div>
+		<div class="input_field">
+			<input type="text" name="email" placeholder="Email" id="email">
+		</div>
+		<div class="input_field">
+			<input type="text" name="subject"placeholder="Subject" id="subject">
+		</div>
+		<div class="input_field">
+		<textarea name= "message" id="message" placeholder="Message"></textarea>
+		</div>
+
+		<div class="btn">
+		<input type="submit">
+		</div>
+		</form>	
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body,html{
+	margin: 0;
+	font-family: 'Lato';
+	background-image: url('../images/background.jpg');
+	background-position:center;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.name-header a{
+	top:47px;
+	font-size: 30px;
+	float: left;
+}
+
+#navbar a:before{
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 2px;
+  bottom: -30%;
+  background-color: #228B22;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+  
+#navbar a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#navbar {
+	font-size: 20px;
+	position: sticky;
+}
+
+#navbar ul{
+	list-style: none;
+	text-align: right;
+}
+
+
+#navbar li{
+	display: inline;
+	padding: 20px;
+}
+
+#navbar a{
+	color: #006400;
+	text-decoration: none;
+	padding-right: 15px;
+	transition: 1s;
+	position: relative;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.headers{
+	text-align: center;
+}
+
+h1{
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-top: 20%;
+	border-bottom: 3px solid #228B22;
+	display: inline-block;
+	color: #006400;
+}
+
